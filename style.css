@@ -1,0 +1,14 @@
+:root {
+    --cell-size: 100px;
+}
+
+.board { 
+    width: 90vw;
+    height: 120vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, auto);
+}

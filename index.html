@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Soluna Solitaire</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <!-- 
+        The following is because I don't have a favicon yet (small icon next to page name). 
+        Don't want the webpage to be throwing GET ../favicon.ico errors. Try this: 
+        https://blog.hubspot.com/website/what-is-a-favicon if you have some time. 
+    -->
+    <link rel="shortcut icon" href="#"/> 
 </head>
 <body>
-    <h1>Soluna Solitaire</h1>
+    <!--
+        <h1>Soluna Solitaire</h1>
+    -->
+    <p class="align-center">
+        <img src="https://see.fontimg.com/api/renderfont4/ZWOz/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U29sdW5hIFNvbGl0YWlyZQ/bold-type-regular.png" alt="Bold fonts">
+    </p>
     <div class="board" id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+        <div class="cell" data-index="9"></div>
+        <div class="cell" data-index="10"></div>
+        <div class="cell" data-index="11"></div>
+    </div>
+    <div class="end-message" id="endMessage">
+        <div data-end-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+    <div class="wizard" id="wizard">
+        <div data-wizard></div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="resources/js/index.js" type="module"></script>
 </html>

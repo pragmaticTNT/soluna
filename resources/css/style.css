@@ -1,0 +1,75 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size)*0.9);
+    --game-width: 100vw;
+    --game-height: 50vh;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.board { 
+    width: var(--game-width);
+    height: var(--game-height);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(12, auto);
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font: mono;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.end-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+}
+
+.end-message.show {
+    display: flex;
+}
+
+.star {
+    background-color: #F7ECDE;
+}
+
+.moon {
+    background-color: #C1EFFF;
+}
+
+.sun {
+    background-color: #FFB3B3;
+}
+
+.comet {
+    background-color: #AF7AB3;
+}
